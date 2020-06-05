@@ -2,21 +2,21 @@ function myQuote() {
 
 // Store the qoutes in an array/
 
-  let quoteA = ["No one has caught the cricket unless they crawl",
-                "It is easy to forget good things which people did to you than one thing",
+  let quoteA = ["No one has caught the cricket ",
+                "It is easy to forget all good things ",
                 "No one can do  what your mum do",
-                "I do not want to ruin a peace I do not owe you",
-                "Be the good captain ofyour ship"];
-  let quoteB = ["let them go",
-                "if only I know.",
-                "Where is your code.",
-                "Don't give up",
-                "read carefully"];
-  let quoteC = ["did you solve it?",
-                "I forget to leave the key",
-                "It so hard",
-                "if it is possible",
-                "trust the others"
+                "I do not want to ruin a peace.",
+                "Be the good captain of your ship."];
+  let quoteB = ["unless they crawl.",
+                "which people did to us.",
+                "so don't forget what she has done.",
+                " I do not owe you",
+                "Fight all your battles with prayer."];
+  let quoteC = ["Did you get it?",
+                "than one bad thing.",
+                "Give to her your love.",
+                "if it is possible.",
+                "You will always win."
 ];
 let randomQuoteA = quoteA[Math.floor(Math.random() * quoteA.length)];
 let randomQuoteB = quoteB[Math.floor(Math.random() * quoteB.length)];
