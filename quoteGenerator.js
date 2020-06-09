@@ -26,9 +26,11 @@ let newQuote = `${quoteA[randomQuoteA]} ${quoteB[randomQuoteB]} ${quoteC[randomQ
 console.log(newQuote);
 
 //1. use prompt to ask the user how many times we want to generate a random quote
-
-const number = prompt("Enter the number of times we want to generate a random: ");
-if (number >= 1 && number <= 5) {
+let number = 0;
+while (number < 1 || number > 5) {
+ number = prompt("Enter the number of times we want to generate a random: ");
+ //3. we're going to use a loop somewhere, and it's going to last the number of times that the user entered in the prompt!//
+ if (number >= 1 && number <= 5) {
      for(let i = 0; i < number; i++) {
        const quoteGenerator = () => {
           let randomQuoteA = Math.floor(Math.random() * quoteA.length);
@@ -43,15 +45,4 @@ console.log(newQuote);
 }
 
 }
-
-//2. check if the prompt give us something between 1 and 5
-
-
-//3. we're going to use a loop somewhere, and it's going to last the number of times that the user entered in the prompt!
-for(let i = 0; i < newQuote.legth; i++) {
-
 }
-console.log(newQuote)
-//4. refactor our code into a function, and put the function call inside the loop
-//4.1 generate random numbers
-//4.2 show the generated quotes
