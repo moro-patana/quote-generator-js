@@ -69,7 +69,7 @@ function quoteGenerator2(number) {
      randomMid = quotationMid[Math.floor(Math.random() * quotationMid.length)];
      randomEnd = quotationEnd[Math.floor(Math.random() * quotationEnd.length)];
 
-     var result = "\"" + randomBig + " " + randomMid + ", " + randomEnd + "\!" + "\"";
+     var result = "\"" + randomBig + " " + randomMid + ", " + randomEnd + "\"";
      console.log(result);
 }
 // Use prompt to ask the user which type of quote they want//
